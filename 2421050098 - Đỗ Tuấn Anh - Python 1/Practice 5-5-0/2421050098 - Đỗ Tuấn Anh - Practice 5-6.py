@@ -4,11 +4,11 @@ number_1 = float(input("Nhập vào số thứ nhất: "))
 number_2 = float(input("Nhập vào số thứ hai: "))
 
 if number_1 > number_2:
-    print(f"{number_1} là số lớn nhất")
+    print(f"Số thứ nhất lớn nhất")
 elif number_1 < number_2:
-    print(f"{number_2} là số lớn nhất")
+    print(f"Số thứ hai lớn nhất")
 else:
-    print(f"{number_1} = {number_2}")
+    print(f"Hai số bằng nhau")
 
 # Chương trình kiểm tra một người có đủ tiêu chuẩn về chiều cao và cân nặng hay không
 
