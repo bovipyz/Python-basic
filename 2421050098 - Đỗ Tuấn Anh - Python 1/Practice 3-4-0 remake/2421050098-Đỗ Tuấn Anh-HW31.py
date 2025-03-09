@@ -1,96 +1,8 @@
-# # Sinh viên sử dụng vòng lặp while để xây dựng lại các bài toán đã làm với for
-
-
-# # 3-4-1, 3-4-2
-# input_number = int(input("Nhập số bắt đầu: "))
-# output_number = int(input("Nhập số kết thúc: "))
-# while input_number <= output_number:
-#     print(f"Đây là số thứ {input_number}")
-#     input_number += 1
-
-# # 3-4-3
-# input_number = int(input("Nhập số bắt đầu: "))
-# output_number = int(input("Nhập số kết thúc: "))
-# while input_number <= output_number:
-#         input_number += 1
-#         if input_number % 2 == 0:
-#             print(f"Đây là số chẵn thứ {input_number}")
-
-
-# # 3-4-4
-# # Cách 1
-# juices_menu = ['táo', 'xoài', 'chuối']
-# juices_price = [10, 20, 30]
-
-# i = 0
-# while i < len(juices_menu):
-#     print(juices_menu[i], "--", juices_price[i])
-#     i += 1
-
-# # Cách 2
-# juices_menu_and_price = ["táo", 10, "xoài", 20, "chuối", 30]
-
-# i = 0
-# while i <= 5:
-#     print(juices_menu_and_price[i], "--", juices_menu_and_price[i+1])
-#     i += 2
-
-# # Cách 3
-# juices_menu_and_price = ["táo", "xoài", "chuối", 10, 20, 30]
-
-# i = 0
-# while i < 3:
-#     print(juices_menu_and_price[i], "--", juices_menu_and_price[i+3])
-#     i += 1
-
-
-# # 3-4-5
-# juices_name = ["táo", "xoài", "chuối"]
-# print(f"Danh sách đồ uống: {juices_name}")
-
-# juices_menu = ["táo", "xoài", "chuối", 10, 20, 30]
-# print("Danh sách đồ uống nước trái cây:")
-# i = 0
-# while i < 3:
-#     print(f"{juices_menu[i]} : {juices_menu[i+3]}")
-#     i += 1
-
-# # 3-4-6
-# juices_name = ["táo", "xoài", "chuối"]
-# i = 0
-# while i < 3:
-#     print(juices_name[i], end = " ")
-#     i += 1
-
-# juices_menu = ["táo", "xoài", "chuối", 10, 20, 30]
-# print("\nDanh sách đồ uống nước trái cây:")
-# i = 0
-# while i < 3:
-#     print(f"{juices_menu[i]} : {juices_menu[i+3]}")
-#     i += 1
-
-
-# # 3-4-7
-# juices_name = ["táo", "xoài", "chuối"]
-# i = 0
-# while i < 3:
-#     print(juices_name[i], end = "\t")
-#     i += 1
-
-# juices_menu = ["táo", "xoài", "chuối", 10, 20, 30]
-# print("\nDanh sách đồ uống nước trái cây:")
-# i = 0
-# while i < 3:
-#     print(f"{juices_menu[i]} : {juices_menu[i+3]}")
-#     i += 1
-
-
-# 3-4-8 (Cuối slide): Làm lại bài tập hw31 với for và break
-# HW31
 # Khởi tạo một danh sách bao gồm các phần tử là điểm của của một sinh viên (hệ 10). Hãy thực hiện:
 # Tạo một danh sách là các điểm chữ tương ứng với điểm hệ 10 ở trên.
 # Tính điểm trung bình hệ 10 và hệ 4
 
+# for
 numbers = int(input("Nhập số lượng sinh viên: "))
 for n in range(numbers):
     list_subjects = []
@@ -140,8 +52,32 @@ for n in range(numbers):
     print(f"Điểm trung bình hệ 4: {average_4_points}")
 
 
+# while 
+ten_point_system = [8.4, 6.5, 7.3, 2.6, 9.0, 5.8, 6.0, 9.7, 8.1]
+word_point_system = ["B+", "C+", "B", "F", "A+", "C", "C", "A+", "B+"]
+four_point_system = [3.5, 2.5, 3.0, 0, 4.0, 2.0, 2.0, 4.0, 3.5]
+print("----------Điểm trung bình----------")
 
-        
+i = 0
+total = 0
+while i < len(ten_point_system):
+    total += ten_point_system[i]
+    i += 1
+average = total / len(ten_point_system)
+print(f"Điểm trung bình hệ 10: {average}")
+i = 0
+total = 0
+while i < len(four_point_system):
+    total += four_point_system[i]
+    i += 1
+average = total / len(ten_point_system)
+print(f"Điểm trung bình hệ 4: {average}")
+
+
+
+
+
+
 
 
 
